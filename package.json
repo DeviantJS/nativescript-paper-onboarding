@@ -1,0 +1,47 @@
+{
+    "name": "nativescript-paper-onboarding",
+    "version": "1.0.0",
+    "description": "PaperOnboarding is a material design slider http://ramotion.com.",
+    "main": "nativescript-paper-onboarding.js",
+    "nativescript": {
+        "platforms": {
+            "android": "2.0.0",
+            "ios": "2.0.0"
+        }
+    },
+    "scripts": {
+        "build": "tsc",
+        "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+        "demo.android": "npm run preparedemo && cd demo && tns run android",
+        "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-paper-onboarding && tns plugin add .. && tns install",
+        "setup": "cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DeviantJS/nativescript-paper-onboarding.git"
+    },
+    "keywords": [
+        "NativeScript",
+        "JavaScript",
+        "Android",
+        "iOS",
+        "material-slider",
+        "slider"
+    ],
+    "author": {
+        "name": "Joshua Wiens",
+        "email": "wiens.joshua@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/DeviantJS/nativescript-paper-onboarding/issues"
+    },
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/DeviantJS/nativescript-paper-onboarding/blob/master/LICENSE"
+    },
+    "homepage": "https://github.com/DeviantJS/nativescript-paper-onboarding",
+    "readmeFilename": "README.md",
+    "devDependencies": {
+        "typescript": "^1.8.10"
+    }
+}
